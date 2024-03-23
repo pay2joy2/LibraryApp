@@ -1,0 +1,7 @@
+
+	java:S112."FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¾´Òµå1J$eba67a5a-e040-48fa-a284-fb811815b2a5
+‡
+java:S2147+"DCombine this catch with the one at line 41, which has the same body.(ï­£Ä8Ü´Òµå1J$23d4b4bc-e999-42b3-82a2-e26ccca9ad6b
+u
+java:S4925$"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8ß´Òµå1J$81e414f6-7cde-4ee5-8707-566a80e2fb03
+r	java:S106'"+Replace this use of System.out by a logger.(Üšúıÿÿÿÿ8ä´Òµå1J$c47b516d-d68d-42e6-aef5-e7ecf05af1c9

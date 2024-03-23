@@ -1,0 +1,29 @@
+
+“
+java:S1989""PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8‰ÀŞæ1J$5d70cf82-e1e3-4b00-bdd3-2b1d713e8012
+˜
+java:S1989("PHandle the following exception that could be thrown by "getWriter": IOException.(‰·¸Ëûÿÿÿÿ8ÀŞæ1J$7d4f5d4a-f76e-4e45-8baf-286f83587de6
+}	java:S1251"<This block of commented-out lines of code should be removed.(Ù«ˆ8ÀŞæ1J$e1c54bba-1bbd-4e65-ba59-9d47df2cf564
+}	java:S125@"<This block of commented-out lines of code should be removed.(Ù«ˆ8ÀŞæ1J$e83d2dff-5c54-4099-bbcc-fa561b886196
+}	java:S125O"<This block of commented-out lines of code should be removed.(Ù«ˆ8øÈÓŞæ1J$f2f66bf7-9f04-43e5-ad6f-53eb8a9c659f
+Q
+java:S1128
+"4Remove this unused import 'org.library.dao.BookDAO'.(œ¢‹8©şàæ1
+_
+java:S1128"=Remove this unused import 'org.library.db.ConnectionFactory'.(¡¢à¦ûÿÿÿÿ8©şàæ1
+X
+java:S1128"6Remove this unused import 'org.library.dto.AuthorDTO'.(¾¿¿Ëùÿÿÿÿ8©şàæ1
+U
+java:S1128"8Remove this unused import 'org.library.entities.Author'.(‘Şµ¦8©şàæ1
+S
+java:S1128"6Remove this unused import 'org.library.entities.Book'.(´ÑÑ8©şàæ1
+]
+java:S1128";Remove this unused import 'org.library.entities.Publisher'.(ÒÆÿËùÿÿÿÿ8©şàæ1
+`
+java:S1128">Remove this unused import 'org.library.service.AuthorService'.(äŞÒøûÿÿÿÿ8©şàæ1
+M
+java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8©şàæ1
+O
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8‚©şàæ1
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8‚©şàæ1
