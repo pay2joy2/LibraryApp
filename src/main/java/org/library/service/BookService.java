@@ -30,11 +30,17 @@ public class BookService extends AbstractService<BookDTO> {
 
     @Override
     public boolean deleteById(long id) {
-        return false;
+        return execute(connection -> {
+            BookDAO bookDAO = new BookDAO(connection);
+            return bookDAO.deleteById(id);
+        });
     }
 
     @Override
     public boolean updateById(long id, String name) {
-        return false;
+        return execute(connection -> {
+            BookDAO bookDAO = new BookDAO(connection);
+            return bookDAO.updateById(id,name);
+        });
     }
 }

@@ -1,6 +1,5 @@
 package org.library.dao;
 
-import org.library.entities.Author;
 import org.library.entities.Publisher;
 
 import java.sql.Connection;
@@ -15,8 +14,8 @@ public class PublisherDAO extends AbstractDAO<Publisher> {
 
     @Override
     public Publisher findById(long id) {
-        TestAllQuery testAllQuery = new TestAllQuery(connection);
-        return testAllQuery.getPublishersMap().get(id);
+        ReceiveWholeQuery receiveWholeQuery = new ReceiveWholeQuery(connection);
+        return receiveWholeQuery.getPublishersMap().get(id);
     }
 
     @Override
@@ -41,30 +40,39 @@ public class PublisherDAO extends AbstractDAO<Publisher> {
 
     @Override
     public boolean save(Publisher publisher) {
-//        String query =
-//                "INSERT INTO publishers " +
-//                "VALUES (?,?)";
-//        try (PreparedStatement preparedStatement = connection.prepareStatement(query)){
-//            preparedStatement.setLong(1, publisher.getId());
-//            preparedStatement.setString(2,publisher.getName());
-//            preparedStatement.executeUpdate();
-//            return true;
-//        } catch (SQLException e){
-//            e.printStackTrace();
-//        }
-//        return false;
-
         return false;
     }
 
 
     @Override
     public boolean deleteById(long id) {
+        String query =
+                "DELETE FROM publishers " +
+                "WHERE publisherId = ?";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            preparedStatement.setLong(1, id);
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
         return false;
     }
 
     @Override
     public boolean updateById(long id, String name) {
+        String query =
+                "UPDATE publishers" +
+                "SET publishersName = ? " +
+                "WHERE publisherId = ? ";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            preparedStatement.setString(1,name);
+            preparedStatement.setLong(2, id);
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
         return false;
     }
 }

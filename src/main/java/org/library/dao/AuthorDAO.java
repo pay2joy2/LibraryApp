@@ -14,8 +14,8 @@ public class AuthorDAO extends AbstractDAO<Author>{
 
     @Override
     public Author findById(long id) {
-        TestAllQuery testAllQuery = new TestAllQuery(connection);
-        return testAllQuery.getAuthorMap().get(id);
+        ReceiveWholeQuery receiveWholeQuery = new ReceiveWholeQuery(connection);
+        return receiveWholeQuery.getAuthorMap().get(id);
     }
 
     @Override

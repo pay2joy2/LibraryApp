@@ -9,10 +9,6 @@ public abstract class AbstractService<T>{
 
     private final ConnectionFactory connectionFactory;
 
-//    protected AbstractTest(ConnectionFactory connectionFactory) {
-//        this.connectionFactory = connectionFactory;
-//    }
-
     public AbstractService(){
         this.connectionFactory = ConnectionFactory.getInstance();
     }

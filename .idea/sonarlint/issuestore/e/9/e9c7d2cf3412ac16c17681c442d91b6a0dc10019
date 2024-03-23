@@ -1,37 +1,21 @@
 
+
+java:S1192"LDefine a constant instead of duplicating this literal "publisherId" 3 times.(åğÿ8¢Àíáæ1J$6f0b67e8-e5e6-4681-8a44-7bb01da3e0df
 Ä
-java:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğÿä—8¹Ôİæ1J$761b1701-5ddd-4a11-aede-23a6727f276e
-É
-java:S1186H"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(–àËµÿÿÿÿÿ8¹Ôİæ1J$d18abbcf-da86-4ced-8e50-7577e0a2a687
+java:S1186&"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(üª¼í8ä™îáæ1J$ce19832d-16c6-4aeb-acc4-33032fb503c3
 u
-java:S1948"2Make "publisherService" transient or serializable.(†Ô8ìä©İæ1J$acfbc4df-184a-4d78-99fa-390e4bea78d1
+java:S1948"2Make "publisherService" transient or serializable.(†Ô8ìä©İæ1J$209c300c-cdf7-430a-838a-054a74563840
 “
-java:S1989#"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8Ÿ½ô×æ1J$04d921cc-192d-4189-8e30-1f934691ed75
+java:S1989"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8Ÿ½ô×æ1J$41ad4c45-0b33-4c3a-bfae-6373fa809dac
 ’
-java:S1989*"PHandle the following exception that could be thrown by "getWriter": IOException.(¡³Ğ38Á¬¤İæ1J$bd4a2d4b-c32b-4c58-958f-887c43308436
-}	java:S1253"<This block of commented-out lines of code should be removed.(Ù«ˆ8èš§İæ1J$f69eafb1-b197-4ec9-93e6-aaaafcfd2003
-w
-java:S1128
-"4Remove this unused import 'org.library.dao.BookDAO'.(œ¢‹8ôä©İæ1J$f76773b8-54cd-4ef5-9da7-e581e0dc1eca
-
-java:S1128"9Remove this unused import 'org.library.dao.PublisherDAO'.(ƒ‹ëÃùÿÿÿÿ8ôä©İæ1J$8b81ae1d-a31c-4010-b8ce-755a2bd15d8f
-…
-java:S1128"=Remove this unused import 'org.library.db.ConnectionFactory'.(¡¢à¦ûÿÿÿÿ8ôä©İæ1J$f83cb2e5-a629-46b1-840b-83da2994ad5a
-~
-java:S1128"6Remove this unused import 'org.library.dto.AuthorDTO'.(¾¿¿Ëùÿÿÿÿ8ôä©İæ1J$d0f55524-95d2-40cb-8e04-e9113fe02b3d
-ƒ
-java:S1128";Remove this unused import 'org.library.entities.Publisher'.(ÒÆÿËùÿÿÿÿ8õä©İæ1J$8a024ed6-dde7-42b9-8b11-88978c1a931e
-ƒ
-java:S1128";Remove this unused import 'org.library.mappers.BookMapper'.(ûëÎ½şÿÿÿÿ8õä©İæ1J$0bf9933e-4c98-44c0-8f73-c2dc9b8b4a8f
-‡
-java:S1128"?Remove this unused import 'org.library.mappers.BookMapperImpl'.(ğüşÿÿÿÿ8õä©İæ1J$ff242b23-3ecf-4563-8300-4c8e9ec2ae5b
-ˆ
-java:S1128"@Remove this unused import 'org.library.mappers.PublisherMapper'.(¨…¢ııÿÿÿÿ8õä©İæ1J$7a7d67cb-c036-45d3-9e82-9266d3c62f9d
-Œ
-java:S1128"DRemove this unused import 'org.library.mappers.PublisherMapperImpl'.(ß±øÁúÿÿÿÿ8õä©İæ1J$d3d399bb-6da7-4b3f-b6b6-452a5afbc100
-s
-java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8õä©İæ1J$637aaa79-5de7-45b8-bba7-b76fe6e3e11e
-u
-java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8õä©İæ1J$47935191-2e54-4acc-9a37-460ba4866137
+java:S1989"PHandle the following exception that could be thrown by "getWriter": IOException.(¡³Ğ38Á¬¤İæ1J$c59113e1-32d4-4f23-b4bd-926267a174a9
+“
+java:S1989+"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8ŠÉêáæ1J$ebcd0f5a-078c-45a3-bf33-8a8d09def7d3
+˜
+java:S19892"PHandle the following exception that could be thrown by "getWriter": IOException.(¾–øºıÿÿÿÿ8’¯ëáæ1J$20249c38-9350-4d7b-ab3f-af8e6ea2ffc7
+“
+java:S1989;"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8‘¯ëáæ1J$70c4bc06-23bc-411b-ad01-d889820577dc
+˜
+java:S1989A"PHandle the following exception that could be thrown by "getWriter": IOException.(û²·úÿÿÿÿ8òæìáæ1J$c66eb625-0968-4501-8a54-c3c4d1ee8faf
 ›
-java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(†Ô8Óéİæ1J$80ef0fc7-af31-4bfb-a52d-a957db78da07
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(†Ô8Óéİæ1J$48136181-ec18-4f89-b38e-b17243214544

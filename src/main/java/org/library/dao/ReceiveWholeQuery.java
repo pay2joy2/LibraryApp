@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TestAllQuery {
+public class ReceiveWholeQuery {
     private static Map<Long, Book> bookMap;
     private static Map<Long, Author> authorMap;
     private static Map<Long, Publisher> publishersMap;
@@ -19,16 +19,14 @@ public class TestAllQuery {
     public Map<Long, Book> getBookMap() {
         return bookMap;
     }
-
     public Map<Long, Author> getAuthorMap() {
         return authorMap;
     }
-
     public Map<Long, Publisher> getPublishersMap() {
         return publishersMap;
     }
 
-    public TestAllQuery(Connection connection){
+    public ReceiveWholeQuery(Connection connection){
         mapsInitialization(connection);
     }
 

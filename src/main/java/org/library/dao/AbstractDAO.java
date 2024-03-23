@@ -1,12 +1,9 @@
 package org.library.dao;
 
-import org.library.entities.Author;
-
 import java.sql.Connection;
 
 public abstract class AbstractDAO<T> {
     public final Connection connection;
-
     protected AbstractDAO(Connection connection) {
         this.connection = connection;
     }

@@ -1,7 +1,5 @@
 package org.library.dto;
 
-import org.library.entities.Book;
-
 import java.util.ArrayList;
 import java.util.List;
 

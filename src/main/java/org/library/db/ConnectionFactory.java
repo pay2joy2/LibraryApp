@@ -38,12 +38,8 @@ public class ConnectionFactory{
         } catch (SQLException e) {
             System.out.println("failed to create connection");
             e.printStackTrace();
-        } catch (FileNotFoundException e) {
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
         }
         return conn;
     }

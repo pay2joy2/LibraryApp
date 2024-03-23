@@ -1,8 +1,4 @@
 
-~	java:S125"<This block of commented-out lines of code should be removed.(›ùÁŞ8´ıÛàæ1J$4dfc85d6-4ed0-4070-b9ab-397151bace2a
-…
-java:S1128"=Remove this unused import 'org.library.db.ConnectionFactory'.(¡¢à¦ûÿÿÿÿ8Ã‹Şàæ1J$6db3ae67-fa1d-47e2-a630-c664eac228db
-{
-java:S1128"8Remove this unused import 'org.library.entities.Author'.(‘Şµ¦8Ã‹Şàæ1J$aa45704a-25b4-49e0-8d27-ebb8c1b30e95
-i
-java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8Ã‹Şàæ1J$3d7eb6c6-f6f5-4144-8ee8-1d7aeb1c822c
+™
+java:S1192`"QDefine a constant instead of duplicating this literal "WHERE bookId = ?" 3 times.(ÁËÚúÿÿÿÿ8–Ëüáæ1J$53e0e942-6a80-4987-b510-92a8d47e7fd7
+~	java:S125"<This block of commented-out lines of code should be removed.(›ùÁŞ8´ıÛàæ1J$2c7ff874-2610-48f6-849c-e6ca3fed6d04

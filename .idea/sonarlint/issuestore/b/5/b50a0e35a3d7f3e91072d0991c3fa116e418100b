@@ -1,22 +1,17 @@
 
 ‹
-java:S1192"IDefine a constant instead of duplicating this literal "authorId" 3 times.(”’%8ϊ¤§άζ1J$d229d317-79ae-4277-96e5-84b2aece4774
+java:S1192"IDefine a constant instead of duplicating this literal "authorId" 3 times.(”’%8ϊ¤§άζ1J$96258fe5-5d12-45a3-8194-ad031803b822
 Δ
-java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(όªΌν8 †ªάζ1J$7fa5caf8-abfe-4879-9dd2-a3392922f403
+java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(όªΌν8 †ªάζ1J$fe11fad8-8cd8-4d54-bcbd-e655c04f9a56
 “
-java:S1989"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8‚¥§άζ1J$3ac4b5d3-f7b8-4b11-a2ce-69401b6de371
+java:S1989"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8‚¥§άζ1J$8995f16c-a081-4e24-a348-2903fff8316a
 
-java:S1989!"PHandle the following exception that could be thrown by "getWriter": IOException.(‚Έώαόÿÿÿÿ8†¥§άζ1J$ddea6065-74f5-465f-9c0a-0f3443ab69f2
+java:S1989"PHandle the following exception that could be thrown by "getWriter": IOException.(‚Έώαόÿÿÿÿ8†¥§άζ1J$90a6de03-ccd7-42c6-b462-e4a7134d3a8d
 “
-java:S1989+"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8¥§άζ1J$65954443-4f88-4afa-b3d5-68f76ae74c20
+java:S1989*"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8®†ªάζ1J$ad936253-8882-4208-b8d5-cc24ea6b631f
 
-java:S19891"PHandle the following exception that could be thrown by "getWriter": IOException.(ϋ²·ϊÿÿÿÿ8¥§άζ1J$e369d645-6737-4929-ad6f-2e5e850397b3
+java:S19891"PHandle the following exception that could be thrown by "getWriter": IOException.(Ύ–ψΊύÿÿÿÿ8―†ªάζ1J$7130c66e-4ae1-4665-8b70-8a510ee76af3
 “
-java:S1989:"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8®†ªάζ1J$82de9141-99e9-42f7-885a-5a1ee12e1b1a
+java:S19899"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8ΰώθαζ1J$6f816916-ab95-422e-9d04-fc305bbdd862
 
-java:S1989A"PHandle the following exception that could be thrown by "getWriter": IOException.(Ύ–ψΊύÿÿÿÿ8―†ªάζ1J$7fec4c86-a84b-4205-b060-81070a6164bf
-w
-java:S1128
-"4Remove this unused import 'org.library.dao.BookDAO'.(Ά‹8β©άζ1J$5c383408-155f-4469-a5d8-067a0cbb3864
-…
-java:S1128"=Remove this unused import 'org.library.db.ConnectionFactory'.(΅Άΰ¦ϋÿÿÿÿ8υΈ έζ1J$af7ca084-c8d2-4f70-ab46-ed7e9e06c623
+java:S1989?"PHandle the following exception that could be thrown by "getWriter": IOException.(ϋ²·ϊÿÿÿÿ8αώθαζ1J$8dd8d17f-1df7-4266-a98f-9725aa33b13b

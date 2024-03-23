@@ -1,29 +1,17 @@
 
+
+java:S1192"GDefine a constant instead of duplicating this literal "bookId" 3 times.(ÜËŒşşÿÿÿÿ8¤Šêáæ1J$03d519a4-1bd9-4e81-a6ff-5bb1451a368d
+Ä
+java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(üª¼í8Àüåáæ1J$aba99085-7348-4886-8d95-5b1f207fa5ea
 “
-java:S1989""PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8‰ÀŞæ1J$5d70cf82-e1e3-4b00-bdd3-2b1d713e8012
+java:S1989"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8‰ÀŞæ1J$9837993b-3828-4ee5-8685-c2321e575327
 ˜
-java:S1989("PHandle the following exception that could be thrown by "getWriter": IOException.(‰·¸Ëûÿÿÿÿ8ÀŞæ1J$7d4f5d4a-f76e-4e45-8baf-286f83587de6
-}	java:S1251"<This block of commented-out lines of code should be removed.(Ù«ˆ8ÀŞæ1J$e1c54bba-1bbd-4e65-ba59-9d47df2cf564
-}	java:S125@"<This block of commented-out lines of code should be removed.(Ù«ˆ8ÀŞæ1J$e83d2dff-5c54-4099-bbcc-fa561b886196
-}	java:S125O"<This block of commented-out lines of code should be removed.(Ù«ˆ8øÈÓŞæ1J$f2f66bf7-9f04-43e5-ad6f-53eb8a9c659f
-Q
-java:S1128
-"4Remove this unused import 'org.library.dao.BookDAO'.(œ¢‹8©şàæ1
-_
-java:S1128"=Remove this unused import 'org.library.db.ConnectionFactory'.(¡¢à¦ûÿÿÿÿ8©şàæ1
-X
-java:S1128"6Remove this unused import 'org.library.dto.AuthorDTO'.(¾¿¿Ëùÿÿÿÿ8©şàæ1
-U
-java:S1128"8Remove this unused import 'org.library.entities.Author'.(‘Şµ¦8©şàæ1
-S
-java:S1128"6Remove this unused import 'org.library.entities.Book'.(´ÑÑ8©şàæ1
-]
-java:S1128";Remove this unused import 'org.library.entities.Publisher'.(ÒÆÿËùÿÿÿÿ8©şàæ1
-`
-java:S1128">Remove this unused import 'org.library.service.AuthorService'.(äŞÒøûÿÿÿÿ8©şàæ1
-M
-java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8©şàæ1
-O
-java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8‚©şàæ1
-K
-java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8‚©şàæ1
+java:S1989"PHandle the following exception that could be thrown by "getWriter": IOException.(‰·¸Ëûÿÿÿÿ8ÀŞæ1J$d17009f1-d8ef-4f72-baad-599844c1ae19
+“
+java:S1989*"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8‰ìæáæ1J$d572abb2-68fe-45c8-b043-c3a6042d44fa
+˜
+java:S19891"PHandle the following exception that could be thrown by "getWriter": IOException.(¾–øºıÿÿÿÿ8Šìæáæ1J$d19c3e6c-3f17-4b14-9a91-2176141d8d7d
+“
+java:S19899"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8Ø½éáæ1J$9a4c3fb8-eaf9-4d8c-82ee-b2aca7791fa0
+˜
+java:S1989?"PHandle the following exception that could be thrown by "getWriter": IOException.(û²·úÿÿÿÿ8Ù½éáæ1J$3f2b5136-bacf-4afe-9d81-489e1550300c

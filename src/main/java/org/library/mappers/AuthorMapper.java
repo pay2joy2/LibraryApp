@@ -21,11 +21,8 @@ public interface AuthorMapper {
         }
         return arrayList;
     }
-
     default ArrayList<Book> mapper(List<String> value){
-        return null;
+        return new ArrayList<>();
     }
-
-
 
 }

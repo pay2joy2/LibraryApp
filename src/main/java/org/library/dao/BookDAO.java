@@ -1,7 +1,5 @@
 package org.library.dao;
 
-import org.library.db.ConnectionFactory;
-import org.library.entities.Author;
 import org.library.entities.Book;
 import org.library.entities.Publisher;
 
@@ -9,7 +7,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.*;
 
 public class BookDAO extends AbstractDAO<Book> {
     public BookDAO(Connection connection) {
@@ -80,8 +77,8 @@ public class BookDAO extends AbstractDAO<Book> {
 
     @Override
     public Book findById(long id) {
-        TestAllQuery testAllQuery = new TestAllQuery(connection);
-        return testAllQuery.getBookMap().get(id);
+        ReceiveWholeQuery receiveWholeQuery = new ReceiveWholeQuery(connection);
+        return receiveWholeQuery.getBookMap().get(id);
     }
 
     @Override
@@ -126,8 +123,8 @@ public class BookDAO extends AbstractDAO<Book> {
     public boolean updateById(long id, String newTitle){
         String query =
                 "UPDATE books " +
-                "SET booktitle = ? " +
-                "WHERE bookid = ?";
+                "SET bookTitle = ? " +
+                "WHERE bookId = ?";
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setString(1,newTitle);
             preparedStatement.setLong(2,id);
@@ -149,21 +146,6 @@ public class BookDAO extends AbstractDAO<Book> {
             preparedStatement.executeQuery();
             return true;
         } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
-
-    public boolean saveBookWithoutAuthors(Book book){
-        String query =
-                "INSERT INTO books " +
-                "VALUES (?,?,?)";
-        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
-            preparedStatement.setLong(1, book.getId());
-            preparedStatement.setString(2, book.getTitle());
-            preparedStatement.setLong(3,book.getPublisher().getId());
-            return true;
-        } catch (SQLException e){
             e.printStackTrace();
         }
         return false;

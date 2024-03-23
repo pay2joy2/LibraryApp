@@ -1,10 +1,7 @@
 package org.library.entities;
 
-import org.library.dto.AuthorDTO;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Book {
     private long id;

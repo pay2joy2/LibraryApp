@@ -7,6 +7,7 @@ import org.library.entities.Publisher;
 import org.mapstruct.Mapper;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Mapper
@@ -23,10 +24,8 @@ public interface BookMapper {
     }
 
     default List<Author> mapper(List<String> value){
-        return null;
+        return Collections.emptyList();
     }
-
     default String map(Publisher value){return value.getName();}
-
     default Publisher map(String value){return null;}
 }
