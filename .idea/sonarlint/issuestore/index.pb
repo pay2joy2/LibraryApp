@@ -65,3 +65,11 @@ h
 8src/test/java/org/library/service/AuthorServiceTest.java,1\f\1f5ce0dc8457e3972fd294723906b31eea08f080
 f
 6src/test/java/org/library/service/BookServiceTest.java,b\6\b68d9c514628437a674dcf675406af8a47904bc8
+E
+postrgres/ddl/authors,f\9\f9b5867b9f40a95d173622779edb7b7c6ea6daa9
+J
+postrgres/ddl/booksauthors,8\4\84ba4547ff2393a17d9dc1b16654504f58d47354
+H
+postrgres/ddl/publishers,b\6\b6f799df8f42c976663789afcaf41ef8c3ce6e28
+C
+postrgres/ddl/books,f\2\f27549f221f6f4d1a5da9a644768747ae7082ca8

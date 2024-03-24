@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS public.publishers
+(
+    publisherid bigint NOT NULL,
+    publishername character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT publishers_pkey PRIMARY KEY (publisherid)
+);

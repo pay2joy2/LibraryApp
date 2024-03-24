@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS public.books
+(
+    bookid bigint NOT NULL,
+    booktitle character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    publisherid bigint,
+    CONSTRAINT books_pkey PRIMARY KEY (bookid)
+);
+
+ALTER TABLE IF EXISTS public.books
+    ADD CONSTRAINT fk_publishersid FOREIGN KEY (publisherid)
+    REFERENCES public.publishers (publisherid) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE CASCADE;
