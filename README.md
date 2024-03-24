@@ -42,7 +42,7 @@ Base CRUD operations, with ManyToMany and OneToMany mapping.
 |------------------|-------------------------|--------------------------|---------------------|
 | "bookId":Long    | "bookId":Long           | "bookId":Long            | "bookId":Long       |
 |                  | "bookTitle":"String"    | "BookTitle":"String"     |                     |
-|                  | "publisherId:Long       |                          |                     |
+|                  | "publisherId":Long      |                          |                     |
 |                  | "authorsId":[Long, ...] |                          |                     |
 | Get book by id   | Create book             | Update books title       | Delete book by id   |
 
