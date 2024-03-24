@@ -4,41 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979cffd4-8d55-4367-bc0e-925ecd1603f0" name="Changes" comment="Fixed Some mistakes, added methods. &#10;TO DO: tests, save()">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="979cffd4-8d55-4367-bc0e-925ecd1603f0" name="Changes" comment="Added save() methods">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/service/AuthorServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/service/BookServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/service/PublisherServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/servlets/AuthorServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/servlets/BookServletTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/servlets/PublishersServletTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d840b020b3a574f56d813f1be0126bb1f72f326" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d840b020b3a574f56d813f1be0126bb1f72f326" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/247659f7cb3f9d5f65849e4b83ae7a47860fd65a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/247659f7cb3f9d5f65849e4b83ae7a47860fd65a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e380e2c01d34cc73b041041bc2082b280175fbc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bdb34f7726e26315dd98e0c34881fed96bbeb0b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60cb56eb88c86f74f12d4fd940f38e0b162da4a1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/633b74a1fe38bd9d59f6c002908e2b36ed699afe" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/633b74a1fe38bd9d59f6c002908e2b36ed699afe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7ed21a212fad1eaec8c600af89b5bf032b6d8647" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a092c44dd44fc57731b140d5381280a1886145e4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0d677f34f970efd7d37c28f6b310b72d87bd6c3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0d677f34f970efd7d37c28f6b310b72d87bd6c3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3810467d371e16c2b1e5c136a57b78d53b3b227" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b50a0e35a3d7f3e91072d0991c3fa116e418100b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b50a0e35a3d7f3e91072d0991c3fa116e418100b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d1a5ba6614f96110f006d10fb9781f0fd861d489" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d85ddf8e1e8b545f89a9213675e9454a4416a2af" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d85ddf8e1e8b545f89a9213675e9454a4416a2af" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e1bff52e1c9317b02a8df5a98111dd9f94223d4f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e1bff52e1c9317b02a8df5a98111dd9f94223d4f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9c7d2cf3412ac16c17681c442d91b6a0dc10019" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9c7d2cf3412ac16c17681c442d91b6a0dc10019" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/eaaf22aeec64aab95f32be8e56a80c8e75d1b1c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0505e6834e42556a41ec6457df7c21dc4236e92" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0505e6834e42556a41ec6457df7c21dc4236e92" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcee30d68175db338c46552ec212a2aba381a6dc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcee30d68175db338c46552ec212a2aba381a6dc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/e/3e380e2c01d34cc73b041041bc2082b280175fbc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/b/4bdb34f7726e26315dd98e0c34881fed96bbeb0b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/0/60cb56eb88c86f74f12d4fd940f38e0b162da4a1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/e/7ed21a212fad1eaec8c600af89b5bf032b6d8647" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/0/a092c44dd44fc57731b140d5381280a1886145e4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/3/b3810467d371e16c2b1e5c136a57b78d53b3b227" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/1/d1a5ba6614f96110f006d10fb9781f0fd861d489" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/a/eaaf22aeec64aab95f32be8e56a80c8e75d1b1c0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/dao/AuthorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/dao/AuthorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/dao/PublisherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/dao/PublisherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/dto/AuthorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/dto/AuthorDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/dto/BookDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/mappers/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/mappers/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/service/AbstractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/service/AbstractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/dto/PublisherDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/dto/PublisherDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/service/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/service/AuthorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/service/PublisherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/service/PublisherService.java" afterDir="false" />
@@ -56,6 +47,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -77,44 +69,102 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.4092664&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4092664",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.library.service" />
+      <recent name="org.library.servlets" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.library.dao" />
     </key>
   </component>
   <component name="RunManager" selected="Smart Tomcat.Unnamed">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.library.Main" />
+    <configuration name="BookServiceTest.deleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.*" />
+          <option name="PATTERN" value="org.library.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.library.service" />
+      <option name="MAIN_CLASS_NAME" value="org.library.service.BookServiceTest" />
+      <option name="METHOD_NAME" value="deleteById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookServiceTest.getById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryApp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestMain" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.service" />
+      <option name="MAIN_CLASS_NAME" value="org.library.service.BookServiceTest" />
+      <option name="METHOD_NAME" value="getById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.service" />
+      <option name="MAIN_CLASS_NAME" value="org.library.service.BookServiceTest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PublisherServiceTest.deleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.service" />
+      <option name="MAIN_CLASS_NAME" value="org.library.service.PublisherServiceTest" />
+      <option name="METHOD_NAME" value="deleteById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in LibraryApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryApp" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,14 +193,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.TestMain" />
+      <item itemvalue="JUnit.BookServiceTest.deleteById" />
+      <item itemvalue="JUnit.BookServiceTest.getById" />
+      <item itemvalue="JUnit.BookServiceTest.save" />
+      <item itemvalue="JUnit.PublisherServiceTest.deleteById" />
+      <item itemvalue="JUnit.java in LibraryApp" />
       <item itemvalue="Smart Tomcat.Unnamed" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TestMain" />
+        <item itemvalue="JUnit.java in LibraryApp" />
+        <item itemvalue="JUnit.BookServiceTest.getById" />
+        <item itemvalue="JUnit.BookServiceTest.save" />
+        <item itemvalue="JUnit.BookServiceTest.deleteById" />
+        <item itemvalue="JUnit.PublisherServiceTest.deleteById" />
       </list>
     </recent_temporary>
   </component>
@@ -170,12 +226,20 @@
       <option name="project" value="LOCAL" />
       <updated>1711213499277</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added save() methods">
+      <created>1711277020248</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711277020248</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed Some mistakes, added methods. &#10;TO DO: tests, save()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Some mistakes, added methods. &#10;TO DO: tests, save()" />
+    <MESSAGE value="Added save() methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added save() methods" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -186,8 +250,13 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LibraryAppTask3$TestMain.ic" NAME="TestMain Coverage Results" MODIFIED="1710867007285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LibraryAppTask3$java_in_LibraryApp.ic" NAME="java in LibraryApp Coverage Results" MODIFIED="1711299713881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/LibraryAppTask3$Main.ic" NAME="Main Coverage Results" MODIFIED="1710866673391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.library.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LibraryAppTask3$servlets_in_LibraryApp.ic" NAME="servlets in LibraryApp Coverage Results" MODIFIED="1711293204059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LibraryAppTask3$AuthorServletTest.ic" NAME="AuthorServletTest Coverage Results" MODIFIED="1711290950364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.library.servlets.*</FILTER>
     </SUITE>
   </component>
 </project>

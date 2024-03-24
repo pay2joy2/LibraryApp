@@ -1,25 +1,23 @@
 
 
-java:S1192#"GDefine a constant instead of duplicating this literal "bookId" 4 times.(ÜËŒşşÿÿÿÿ8†½ëÿæ1J$45428e42-4a40-4f3d-8e3a-84d9c93ce1ac
+java:S1192""GDefine a constant instead of duplicating this literal "bookId" 4 times.(ÜËŒşşÿÿÿÿ8áü†ç1J$22484de2-4b6b-459a-8097-bd71129ef57a
+u
+java:S1948"-Make "bookService" transient or serializable.(ÉÏ­áøÿÿÿÿ8¢áü†ç1J$a1695c17-0eba-4faf-a688-92f791e67802
 “
-java:S1989"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8¡½ëÿæ1J$95cb4c4b-1f00-4352-9502-028477747487
+java:S1989"PHandle the following exception that could be thrown by "getReader": IOException.(æõÈ‰8¥áü†ç1J$d7d2b6fc-5696-4831-a152-7d4eca2cd8bf
 ˜
-java:S1989%"PHandle the following exception that could be thrown by "getWriter": IOException.(¿—Èœùÿÿÿÿ8¤½ëÿæ1J$bd2cc25c-968f-4505-af04-74a6c4e76fe7
+java:S1989$"PHandle the following exception that could be thrown by "getWriter": IOException.(¿—Èœùÿÿÿÿ8¨áü†ç1J$b29487ad-d33f-4aca-9c27-9656c2d24625
 “
-java:S19892"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8¦½ëÿæ1J$a1e58651-21a4-43e9-a793-ed10113adeae
+java:S19891"PHandle the following exception that could be thrown by "getReader": IOException.(æõÈ‰8ªáü†ç1J$164b953b-caed-4797-84eb-66a8b4365b92
 ˜
-java:S1989F"PHandle the following exception that could be thrown by "getWriter": IOException.(¿—Èœùÿÿÿÿ8ª½ëÿæ1J$e3f57450-4363-496c-815e-8971da155df9
+java:S1989D"PHandle the following exception that could be thrown by "getWriter": IOException.(¿—Èœùÿÿÿÿ8¬áü†ç1J$df2fb4c4-c958-4c3c-86ba-176defc5de71
 “
-java:S1989U"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8«½ëÿæ1J$e62ddcf8-3e37-4e6b-bd2a-eb157cb9a9be
+java:S1989S"PHandle the following exception that could be thrown by "getReader": IOException.(æõÈ‰8­áü†ç1J$5591bc2e-3857-4c31-a009-cec5411e8086
 ˜
-java:S1989\"PHandle the following exception that could be thrown by "getWriter": IOException.(¾–øºıÿÿÿÿ8­½ëÿæ1J$b49b7b43-3d0e-4b6d-96a9-38a9cac3a057
+java:S1989Y"PHandle the following exception that could be thrown by "getWriter": IOException.(¾–øºıÿÿÿÿ8®áü†ç1J$fc0e34e2-f0f3-421b-bdb9-f2a0adb14eb1
 “
-java:S1989d"PHandle the following exception that could be thrown by "getReader": IOException.(¥³ 8®½ëÿæ1J$034a5fbe-f3fd-4ea6-b287-c69dcfa19ae1
+java:S1989a"PHandle the following exception that could be thrown by "getReader": IOException.(æõÈ‰8¯áü†ç1J$f8a44e8e-afd6-4554-b3cb-70ecc7f40327
 ˜
-java:S1989j"PHandle the following exception that could be thrown by "getWriter": IOException.(û²·úÿÿÿÿ8¯½ëÿæ1J$b445f003-89e0-4c2d-879d-fbb30e2d0f43
-~
-java:S1128"6Remove this unused import 'org.library.dto.AuthorDTO'.(¾¿¿Ëùÿÿÿÿ8¼ó¯€ç1J$fb0f4500-396e-4d9c-8acd-de3242679c97
-|
-java:S1128"9Remove this unused import 'org.library.dto.PublisherDTO'.(À¡Í8¼ó¯€ç1J$26f7e7c2-2667-4810-85d3-88e77932d35f
-s
-java:S1128"+Remove this unused import 'java.io.Writer'.(Î”øÿÿÿÿ8¼ó¯€ç1J$76ff6999-5a38-4eac-ae93-be8b5a122996
+java:S1989f"PHandle the following exception that could be thrown by "getWriter": IOException.(û²·úÿÿÿÿ8°áü†ç1J$805c763f-8614-4990-a509-ed0e056d7524
+ 
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ÉÏ­áøÿÿÿÿ8²áü†ç1J$f486fe13-4c15-4cae-b7c9-2510ce5a8fcd

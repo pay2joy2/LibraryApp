@@ -8,14 +8,6 @@ import org.library.mappers.BookMapperImpl;
 
 public class BookService extends AbstractService<BookDTO> {
 
-    private static BookService instance;
-    public static BookService getInstance(){
-        if (instance == null){
-            instance = new BookService();
-        }
-        return instance;
-    }
-
     @Override
     public BookDTO getById(long id) {
         return execute(connection -> {

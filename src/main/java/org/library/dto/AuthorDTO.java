@@ -2,6 +2,7 @@ package org.library.dto;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class AuthorDTO {
     private long id;
@@ -49,5 +50,18 @@ public class AuthorDTO {
                 ", name='" + name + '\'' +
                 ", books=" + books +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AuthorDTO authorDTO = (AuthorDTO) o;
+        return id == authorDTO.id && Objects.equals(name, authorDTO.name) && Objects.equals(books, authorDTO.books);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, books);
     }
 }

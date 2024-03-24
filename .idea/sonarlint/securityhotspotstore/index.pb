@@ -53,3 +53,15 @@ i
 9src/main/java/org/library/service/WholeQuerryService.java,0\0\00717fd0f0455a4322bb86bf5c87201c46ce0f80
 i
 9src/main/java/org/library/servlets/AllAuthorsServlet.java,b\4\b4c07baa41e1b2142ae01105c5bbaf28ea970bc8
+i
+9src/test/java/org/library/servlets/AuthorServletTest.java,e\5\e59bdbebb8d578f4cc947c89c1135a1dfe327aa7
+m
+=src/test/java/org/library/servlets/PublishersServletTest.java,6\3\639e00cbaf22c25d797d69f9f4a52ffac98bb882
+g
+7src/test/java/org/library/servlets/BookServletTest.java,4\8\48d6299c985978567cd6147fb83e9d63da5725d5
+k
+;src/test/java/org/library/service/PublisherServiceTest.java,0\f\0ffe8565dd4ea1987be2d20813b2781b592e6583
+h
+8src/test/java/org/library/service/AuthorServiceTest.java,1\f\1f5ce0dc8457e3972fd294723906b31eea08f080
+f
+6src/test/java/org/library/service/BookServiceTest.java,b\6\b68d9c514628437a674dcf675406af8a47904bc8

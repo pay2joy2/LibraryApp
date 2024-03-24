@@ -8,15 +8,11 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.library.dto.AuthorDTO;
 import org.library.dto.BookDTO;
-import org.library.dto.PublisherDTO;
 import org.library.service.BookService;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -24,13 +20,16 @@ import java.util.stream.Collectors;
 @WebServlet("/book")
 public class BookServlet extends HttpServlet {
 
-    private static BookService bookService = BookService.getInstance();
+    private BookService bookService = new BookService();
+
+    public void setBookService(BookService bookService) {
+        this.bookService = bookService;
+    }
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        BufferedReader bufferedReader = req.getReader();
-        String body = bufferedReader.lines().collect(Collectors.joining());
-        JSONObject json = new JSONObject(body);
+        String jsonStr = req.getReader().lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(jsonStr);
         try{
             long id = json.getLong("bookId");
             BookDTO bookDTO = bookService.getById(id);
@@ -47,9 +46,8 @@ public class BookServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        BufferedReader bufferedReader = req.getReader();
-        String body = bufferedReader.lines().collect(Collectors.joining());
-        JSONObject json = new JSONObject(body);
+        String jsonStr = req.getReader().lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(jsonStr);
         try{
             long id = json.getLong("bookId");
             String title = json.getString("bookTitle");
@@ -82,9 +80,8 @@ public class BookServlet extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        BufferedReader bufferedReader = req.getReader();
-        String body = bufferedReader.lines().collect(Collectors.joining());
-        JSONObject json = new JSONObject(body);
+        String jsonStr = req.getReader().lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(jsonStr);
         try{
             long id = json.getLong("bookId");
             String name = json.getString("bookTitle");
@@ -97,9 +94,8 @@ public class BookServlet extends HttpServlet {
     }
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        BufferedReader bufferedReader = req.getReader();
-        String body = bufferedReader.lines().collect(Collectors.joining());
-        JSONObject json = new JSONObject(body);
+        String jsonStr = req.getReader().lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(jsonStr);
         try{
             long id = json.getLong("bookId");
             if (bookService.deleteById(id)){

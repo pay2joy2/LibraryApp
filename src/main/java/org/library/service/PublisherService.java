@@ -6,14 +6,7 @@ import org.library.entities.Publisher;
 import org.library.mappers.PublisherMapper;
 import org.library.mappers.PublisherMapperImpl;
 public class PublisherService extends AbstractService<PublisherDTO> {
-    private static PublisherService instance;
 
-    public static PublisherService getInstance(){
-        if (instance == null){
-            instance = new PublisherService();
-        }
-        return instance;
-    }
     @Override
     public PublisherDTO getById(long id) {
         return execute(connection -> {

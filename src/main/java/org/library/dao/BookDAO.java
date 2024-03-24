@@ -91,7 +91,7 @@ public class BookDAO extends AbstractDAO<Book> {
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setString(1,newTitle);
             preparedStatement.setLong(2,id);
-            preparedStatement.executeQuery();
+            preparedStatement.executeUpdate();
             return true;
         }catch (SQLException e){
             e.printStackTrace();
@@ -106,7 +106,7 @@ public class BookDAO extends AbstractDAO<Book> {
                 "WHERE bookId = ?";
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setLong(1,id);
-            preparedStatement.executeQuery();
+            preparedStatement.executeUpdate();
             return true;
         } catch (SQLException e) {
             e.printStackTrace();

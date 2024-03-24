@@ -18,13 +18,16 @@ import java.util.stream.Collectors;
 @WebServlet("/publisher")
 public class PublishersServlet extends HttpServlet {
 
-    PublisherService publisherService = PublisherService.getInstance();
+    private PublisherService publisherService = new PublisherService();
+
+    public void setPublisherService(PublisherService publisherService) {
+        this.publisherService = publisherService;
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        BufferedReader bufferedReader = req.getReader();
-        String body = bufferedReader.lines().collect(Collectors.joining());
-        JSONObject json = new JSONObject(body);
+        String jsonStr = req.getReader().lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(jsonStr);
         try {
             long id = json.getLong("publisherId");
             PublisherDTO publisherDTO = publisherService.getById(id);
@@ -36,9 +39,8 @@ public class PublishersServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        BufferedReader bufferedReader = req.getReader();
-        String body = bufferedReader.lines().collect(Collectors.joining());
-        JSONObject json = new JSONObject(body);
+        String jsonStr = req.getReader().lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(jsonStr);
         try{
             long id = json.getLong("publisherId");
             String name = json.getString("publisherName");
@@ -58,9 +60,8 @@ public class PublishersServlet extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        BufferedReader bufferedReader = req.getReader();
-        String body = bufferedReader.lines().collect(Collectors.joining());
-        JSONObject json = new JSONObject(body);
+        String jsonStr = req.getReader().lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(jsonStr);
         try{
             long id = json.getLong("publisherId");
             String name = json.getString("publisherName");
@@ -74,9 +75,8 @@ public class PublishersServlet extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        BufferedReader bufferedReader = req.getReader();
-        String body = bufferedReader.lines().collect(Collectors.joining());
-        JSONObject json = new JSONObject(body);
+        String jsonStr = req.getReader().lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(jsonStr);
         try{
             long id = json.getLong("publisherId");
             if (publisherService.deleteById(id)){
