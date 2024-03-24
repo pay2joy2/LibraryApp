@@ -1,9 +1,0 @@
-
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«¹˜Şæ1J$9cd269b5-fbd8-4a58-a147-486b0c77b768
-€
-java:S4977"=Rename "T" which hides a type parameter from the outer scope.(ú±ó8¬¹˜Şæ1J$16c0a5dc-ab5b-449a-bfa1-da289cc1bcd6
-|
-java:S5993"9Change the visibility of this constructor to "protected".(®¹Á¶8ß¨ÏŞæ1J$2efdcd6d-91ef-4a39-a19a-18abe6d84eec
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(‰ÍúÊùÿÿÿÿ8á¨ÏŞæ1J$4e7f0acd-ac3b-43f8-b33b-00714ed47dd2
-~
-java:S1128"6Remove this unused import 'org.library.dto.AuthorDTO'.(¾¿¿Ëùÿÿÿÿ8‰ÀûŞæ1J$eeda7aad-e81f-4d35-98ec-d10a6a631cc5

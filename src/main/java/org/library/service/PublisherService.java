@@ -2,6 +2,7 @@ package org.library.service;
 
 import org.library.dao.PublisherDAO;
 import org.library.dto.PublisherDTO;
+import org.library.entities.Publisher;
 import org.library.mappers.PublisherMapper;
 import org.library.mappers.PublisherMapperImpl;
 public class PublisherService extends AbstractService<PublisherDTO> {
@@ -23,6 +24,16 @@ public class PublisherService extends AbstractService<PublisherDTO> {
                 publisherDTO = publisherMapper.toPublisherDTO(publisherDAO.findByIdStrict(id));
             }
             return publisherDTO;
+        });
+    }
+
+    @Override
+    public boolean save(PublisherDTO publisherDTO) {
+        return execute(connection -> {
+            PublisherDAO publisherDAO = new PublisherDAO(connection);
+            PublisherMapper publisherMapper = new PublisherMapperImpl();
+            Publisher publisher = publisherMapper.toPublisher(publisherDTO);
+            return publisherDAO.save(publisher);
         });
     }
 

@@ -40,9 +40,19 @@ public class PublisherDAO extends AbstractDAO<Publisher> {
 
     @Override
     public boolean save(Publisher publisher) {
+        String query =
+                "INSERT INTO publishers " +
+                "VALUES (?,?)";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            preparedStatement.setLong(1,publisher.getId());
+            preparedStatement.setString(2,publisher.getName());
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
         return false;
     }
-
 
     @Override
     public boolean deleteById(long id) {
@@ -62,8 +72,8 @@ public class PublisherDAO extends AbstractDAO<Publisher> {
     @Override
     public boolean updateById(long id, String name) {
         String query =
-                "UPDATE publishers" +
-                "SET publishersName = ? " +
+                "UPDATE publishers " +
+                "SET publisherName = ? " +
                 "WHERE publisherId = ? ";
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setString(1,name);

@@ -13,68 +13,6 @@ public class BookDAO extends AbstractDAO<Book> {
         super(connection);
     }
 
-//    @Override
-//    public Book findById(long id){
-//        String query =
-//                        "SELECT * " +
-//                        "FROM booksauthors " +
-//                        "INNER JOIN authors ON authors.authorid = booksauthors.authorid " +
-//                        "INNER JOIN books ON books.bookid = booksauthors.bookid " +
-//                        "INNER JOIN publishers ON publishers.publisherid = books.publisherid";
-//        try(PreparedStatement statement = connection.prepareStatement(query)){
-//            ResultSet resultSet = statement.executeQuery();
-//            Map<String, Book> bookMap = new HashMap<>();
-//            Map<String, Author> authorMap = new HashMap<>();
-//            Map<String, Publisher> publishersMap = new HashMap<>();
-//            while(resultSet.next()){
-//                Book book = new Book();
-//                book.setId(resultSet.getLong("BookId"));
-//                book.setTitle(resultSet.getString("BookTitle"));
-//
-//                Author author = new Author();
-//                author.setId(resultSet.getLong("AuthorId"));
-//                author.setName(resultSet.getString("AuthorName"));
-//
-//                Publisher publisher = new Publisher();
-//                publisher.setId(resultSet.getLong("publisherid"));
-//                publisher.setName(resultSet.getString("publishername"));
-//
-//                if(bookMap.containsKey(book.getTitle())){
-//                    author.addBooks(book);
-//                    bookMap.get(book.getTitle()).addAuthors(author);
-//                    authorMap.put(author.getName(),author);
-//                } else if (authorMap.containsKey(author.getName())) {
-//                    book.addAuthors(author);
-//                    authorMap.get(author.getName()).addBooks(book);
-//                    bookMap.put(book.getTitle(), book);
-//                } else {
-//                    book.addAuthors(author);
-//                    author.addBooks(book);
-//                    bookMap.put(book.getTitle(), book);
-//                    authorMap.put(author.getName(),author);
-//                }
-//                if(publishersMap.containsKey(publisher.getName())){
-//                    if(!publishersMap.get(publisher.getName()).getBooks().contains(bookMap.get(book.getTitle()))){
-//                        bookMap.get(book.getTitle()).setPublisher(publishersMap.get(publisher.getName()));
-//                        publishersMap.get(publisher.getName()).addBooks(bookMap.get(book.getTitle()));
-//                    }
-//                } else {
-//                    publisher.addBooks(bookMap.get(book.getTitle()));
-//                    bookMap.get(book.getTitle()).setPublisher(publisher);
-//                    publishersMap.put(publisher.getName(),publisher);
-//                }
-//            }
-//            for(Book book: bookMap.values()){
-//                if(book.getId() == id){
-//                    return book;
-//                }
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
-
     @Override
     public Book findById(long id) {
         ReceiveWholeQuery receiveWholeQuery = new ReceiveWholeQuery(connection);
@@ -115,8 +53,33 @@ public class BookDAO extends AbstractDAO<Book> {
     }
 
     @Override
-    public boolean save(Book o) {
+    public boolean save(Book book) {
+        String query =
+                "INSERT INTO books " +
+                "VALUES (?,?,?)";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            preparedStatement.setLong(1, book.getId());
+            preparedStatement.setString(2, book.getTitle());
+            preparedStatement.setLong(3, book.getPublisher().getId());
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
         return false;
+    }
+
+    public void saveBooksAuthorsTable(long bookId, long authorId){
+        String query =
+                "INSERT INTO BooksAuthors " +
+                "VALUES (?,?)";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            preparedStatement.setLong(1,bookId);
+            preparedStatement.setLong(2,authorId);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 
     @Override

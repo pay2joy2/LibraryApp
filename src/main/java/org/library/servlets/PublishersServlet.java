@@ -12,6 +12,7 @@ import org.library.service.PublisherService;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.stream.Collectors;
 
 @WebServlet("/publisher")
@@ -31,11 +32,28 @@ public class PublishersServlet extends HttpServlet {
         } catch (JSONException e){
             e.printStackTrace();
         }
-
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        BufferedReader bufferedReader = req.getReader();
+        String body = bufferedReader.lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(body);
+        try{
+            long id = json.getLong("publisherId");
+            String name = json.getString("publisherName");
+            PublisherDTO publisherDTO = new PublisherDTO();
+            publisherDTO.setId(id);
+            publisherDTO.setName(name);
+            PrintWriter printWriter = resp.getWriter();
+            if(publisherService.save(publisherDTO)){
+                printWriter.println("Publisher inserted");
+            } else {
+                printWriter.println("Something went wrong");
+            }
+        } catch (JSONException e){
+            e.printStackTrace();
+        }
     }
 
     @Override

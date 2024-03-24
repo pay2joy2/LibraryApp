@@ -13,6 +13,7 @@ import org.library.service.AuthorService;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.stream.Collectors;
 
 @WebServlet("/author")
@@ -35,6 +36,24 @@ public class AuthorServlet extends HttpServlet {
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        BufferedReader bufferedReader = req.getReader();
+        String body = bufferedReader.lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(body);
+        try{
+            long id = json.getLong("authorId");
+            String name = json.getString("authorName");
+            AuthorDTO authorDTO = new AuthorDTO();
+            authorDTO.setId(id);
+            authorDTO.setName(name);
+            PrintWriter printWriter = resp.getWriter();
+            if(authorService.save(authorDTO)){
+                printWriter.println("Author Inserted");
+            } else {
+                printWriter.println("Something went wrong");
+            }
+        } catch (JSONException e){
+            e.printStackTrace();
+        }
     }
 
     @Override

@@ -8,11 +8,16 @@ public class BookDTO {
     private List<String> authors;
     private String publisher;
 
-    public BookDTO(long id, String title, List<String> authors) {
+    public BookDTO(long id, String title, List<String> authors, String publisher) {
         this.id = id;
         this.title = title;
         this.authors = authors;
+        this.publisher = publisher;
     }
+
+    public BookDTO() {
+    }
+
     public long getId() {
         return id;
     }

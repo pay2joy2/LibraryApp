@@ -2,6 +2,7 @@ package org.library.service;
 
 import org.library.dao.AuthorDAO;
 import org.library.dto.AuthorDTO;
+import org.library.entities.Author;
 import org.library.mappers.AuthorMapper;
 import org.library.mappers.AuthorMapperImpl;
 
@@ -25,6 +26,16 @@ public class AuthorService extends AbstractService<AuthorDTO>{
                 authorDTO = authorMapper.toAuthorDTO(authorDAO.findByIdStrict(id));
             }
             return authorDTO;
+        });
+    }
+
+    @Override
+    public boolean save(AuthorDTO authorDTO) {
+        return execute(connection -> {
+            AuthorDAO authorDAO = new AuthorDAO(connection);
+            AuthorMapper authorMapper = new AuthorMapperImpl();
+            Author author = authorMapper.toAuthor(authorDTO);
+            return authorDAO.save(author);
         });
     }
 

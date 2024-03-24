@@ -27,5 +27,9 @@ public interface BookMapper {
         return Collections.emptyList();
     }
     default String map(Publisher value){return value.getName();}
-    default Publisher map(String value){return null;}
+    default Publisher map(String value){
+        Publisher publisher = new Publisher();
+        publisher.setId(Long.parseLong(value));
+        return publisher;
+        }
 }

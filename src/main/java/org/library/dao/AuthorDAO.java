@@ -20,6 +20,17 @@ public class AuthorDAO extends AbstractDAO<Author>{
 
     @Override
     public boolean save(Author author) {
+        String query =
+                "INSERT INTO authors " +
+                "VALUES (?,?)";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            preparedStatement.setLong(1,author.getId());
+            preparedStatement.setString(2,author.getName());
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
         return false;
     }
 

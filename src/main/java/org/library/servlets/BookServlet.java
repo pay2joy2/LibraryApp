@@ -5,13 +5,20 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.library.dto.AuthorDTO;
 import org.library.dto.BookDTO;
+import org.library.dto.PublisherDTO;
 import org.library.service.BookService;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @WebServlet("/book")
@@ -27,7 +34,12 @@ public class BookServlet extends HttpServlet {
         try{
             long id = json.getLong("bookId");
             BookDTO bookDTO = bookService.getById(id);
-            resp.getWriter().println(bookDTO.toString());
+            PrintWriter printWriter = resp.getWriter();
+            if(bookDTO == null){
+                printWriter.println("Book not found");
+            } else {
+                printWriter.println(bookDTO.toString());
+            }
         } catch (JSONException e){
             e.printStackTrace();
         }
@@ -35,6 +47,37 @@ public class BookServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        BufferedReader bufferedReader = req.getReader();
+        String body = bufferedReader.lines().collect(Collectors.joining());
+        JSONObject json = new JSONObject(body);
+        try{
+            long id = json.getLong("bookId");
+            String title = json.getString("bookTitle");
+            String publisher = String.valueOf(json.getLong("publisherId"));
+            JSONArray array = json.getJSONArray("authorsId");
+
+            List<String> authors = new ArrayList<>();
+            for(int i = 0; i < array.length(); i++){
+                authors.add(String.valueOf(array.getLong(i)));
+            }
+
+            BookDTO bookDTO = new BookDTO();
+            bookDTO.setId(id);
+            bookDTO.setTitle(title);
+            bookDTO.setPublisher(publisher);
+            bookDTO.setAuthors(authors);
+
+            PrintWriter printWriter = resp.getWriter();
+            if(bookService.save(bookDTO)){
+                printWriter.println("Book saved");
+            } else {
+                printWriter.println("Something went wrong");
+            }
+
+
+        } catch (JSONException e){
+            e.printStackTrace();
+        }
     }
 
     @Override

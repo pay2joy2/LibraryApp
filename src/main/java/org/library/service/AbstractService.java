@@ -27,6 +27,8 @@ public abstract class AbstractService<T>{
 
     public abstract T getById(long id);
 
+    public abstract boolean save(T t);
+
     public abstract boolean deleteById(long id);
 
     public abstract boolean updateById(long id, String name);
