@@ -1,6 +1,3 @@
 
 u
-java:S4925$"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8ß´Òµå1J$f0b00e84-edbe-45e0-9b13-bf419f896e35
-r	java:S106'"+Replace this use of System.out by a logger.(Üšúıÿÿÿÿ8ä´Òµå1J$3469d88d-3016-4389-b245-388f45978ef5
-‚
-java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8‰ãôáæ1J$ff689cdf-4366-4c67-bb9b-b1a3e2b7e965
+java:S4925""-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8±Æˆ’ç1J$ab898fa4-8d01-42a6-b943-06a0152a87ed

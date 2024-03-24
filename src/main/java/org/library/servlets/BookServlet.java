@@ -20,12 +20,25 @@ import java.util.stream.Collectors;
 @WebServlet("/book")
 public class BookServlet extends HttpServlet {
 
+    /**
+     * Класс сервиса bookService
+     */
     private BookService bookService = new BookService();
 
+    /**
+     * Конструктор класса для Mockito
+     * @param bookService
+     */
     public void setBookService(BookService bookService) {
         this.bookService = bookService;
     }
 
+
+    /**
+     * Получение GET запроса.
+     * По bookId выполняется поиск книги.
+     * Происходит вывод информации о ней.
+     */
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());
@@ -44,6 +57,14 @@ public class BookServlet extends HttpServlet {
         }
     }
 
+    /**
+     * Получение POST запроса.
+     * Добавление книги, связанное с остальными сущностями.
+     * Авторы передаются в виде массива Long,
+     * после идёт парсинг в стринг, для хранения в DTO.
+     * Издатель так же передаётся как Long.
+     * Связь осуществляется по id издателей и авторов.
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());
@@ -78,6 +99,12 @@ public class BookServlet extends HttpServlet {
         }
     }
 
+    /**
+     * Получение POST запроса.
+     * Обновление названия книги.
+     * bookId - Id книги
+     * bookTitle - Новое название книги
+     */
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());
@@ -92,6 +119,11 @@ public class BookServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Получение DELETE запроса
+     * Удаление книги из БД по bookId
+     */
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());

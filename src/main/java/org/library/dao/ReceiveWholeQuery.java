@@ -16,6 +16,10 @@ public class ReceiveWholeQuery {
     private static Map<Long, Author> authorMap;
     private static Map<Long, Publisher> publishersMap;
 
+    /**
+     * Геттеры на карты Entity
+     * @return
+     */
     public Map<Long, Book> getBookMap() {
         return bookMap;
     }
@@ -26,10 +30,20 @@ public class ReceiveWholeQuery {
         return publishersMap;
     }
 
+    /**
+     * Инициализация класса, получение полной связанной таблицы из БД
+     * @param connection Соединение с БД
+     */
     public ReceiveWholeQuery(Connection connection){
         mapsInitialization(connection);
     }
 
+    /**
+     * Метод для получения и обработки полной таблицы связанных сущностей.
+     * Во время работы, сущности связываются и помещаются в Map соответствующие своему Entity.
+     * Ключом к картам является их уникальный id.
+     * @param connection Соединение с БД
+     */
     private static void mapsInitialization(Connection connection) {
         String query =
                 "SELECT * " +

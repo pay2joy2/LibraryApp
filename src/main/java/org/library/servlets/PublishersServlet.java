@@ -18,12 +18,24 @@ import java.util.stream.Collectors;
 @WebServlet("/publisher")
 public class PublishersServlet extends HttpServlet {
 
+    /**
+     * Класс сервиса PublisherService
+     */
     private PublisherService publisherService = new PublisherService();
 
+    /**
+     * Конструктор класса для Mockito
+     * @param publisherService
+     */
     public void setPublisherService(PublisherService publisherService) {
         this.publisherService = publisherService;
     }
 
+    /**
+     * Получение GET запроса.
+     * По publisherID выполняется поиск издателя.
+     * Происходит вывод информации о нём.
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());
@@ -37,6 +49,13 @@ public class PublishersServlet extends HttpServlet {
         }
     }
 
+    /**
+     * Получение POST запроса.
+     * Добавление издателя.
+     * Добавление не связано с другими сущностями.
+     * publisherId - уникальный id издателя
+     * publisherName - имя издателя
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());
@@ -58,6 +77,12 @@ public class PublishersServlet extends HttpServlet {
         }
     }
 
+    /**
+     * Получение PUT запроса
+     * Изменение имени издателя
+     * publisherId - уникальный id издателя
+     * publisherName - новое имя издателя
+     */
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());
@@ -73,6 +98,9 @@ public class PublishersServlet extends HttpServlet {
         }
     }
 
+    /**
+     * Удаление издателя по его publisherId
+     */
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());

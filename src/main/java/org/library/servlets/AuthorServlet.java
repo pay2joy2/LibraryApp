@@ -10,8 +10,6 @@ import org.json.JSONObject;
 import org.library.dto.AuthorDTO;
 import org.library.service.AuthorService;
 
-
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.stream.Collectors;
@@ -19,12 +17,24 @@ import java.util.stream.Collectors;
 @WebServlet("/author")
 public class AuthorServlet extends HttpServlet {
 
+    /**
+     * Класс сервиса authorService
+     */
     private AuthorService authorService = new AuthorService();
 
+    /**
+     * Конструктор для тестов через Mockito.
+     * @param authorService
+     */
     public void setAuthorService(AuthorService authorService) {
         this.authorService = authorService;
     }
 
+    /**
+     * Получение GET запроса.
+     * По authorId выполняется поиск автора.
+     * Происходит вывод информации о нём.
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());
@@ -37,6 +47,15 @@ public class AuthorServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
+
+    /**
+     * Получение POST запроса.
+     * Добавление автора
+     * добавление не связанно с другими сущностями.
+     * authorId - уникальный id автора
+     * authorName - Имя автора
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());
@@ -58,6 +77,12 @@ public class AuthorServlet extends HttpServlet {
         }
     }
 
+    /**
+     * Получение PUT запроса.
+     * Изменение имени автора.
+     * authorId - выполняется поиск автора по id.
+     * authorName - Новое имя автора.
+     */
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());
@@ -72,6 +97,10 @@ public class AuthorServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Удаление автора по его authorID
+     */
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String jsonStr = req.getReader().lines().collect(Collectors.joining());

@@ -47,12 +47,3 @@ public class AuthorService extends AbstractService<AuthorDTO>{
         });
     }
 }
-
-//    private static AuthorService instance;
-//
-//    public static AuthorService getInstance(){
-//        if (instance == null){
-//            instance = new AuthorService();
-//        }
-//    return instance;
-//    }

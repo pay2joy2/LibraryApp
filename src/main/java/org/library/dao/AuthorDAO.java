@@ -8,6 +8,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class AuthorDAO extends AbstractDAO<Author>{
+
+    /**
+     * Конструктор класса
+     * @param connection Экземпляр соединения с базой данных
+     */
     public AuthorDAO(Connection connection) {
         super(connection);
     }

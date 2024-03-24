@@ -7,6 +7,11 @@ import java.util.Objects;
 public class AuthorDTO {
     private long id;
     private String name;
+
+    /**
+     * Для простоты вывода пользователю, и отсутствию связанности,
+     * List класса Book упрощён до вывода только их названия.
+     */
     private List<String> books;
 
     public AuthorDTO(long id, String name, List<String> books) {

@@ -1,6 +1,5 @@
 package org.library.db;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -23,11 +22,10 @@ public class ConnectionFactory{
 
     /**
      *
-     * Getting connection for DB - postgresql
-     * Returning Connection
+     * Метод получения связи с базой данных.
+     * @return Connection
      *
      */
-
     public Connection getConnection() {
         Connection conn = null;
         Properties prop= new Properties();
@@ -35,10 +33,7 @@ public class ConnectionFactory{
             prop.load(this.getClass().getClassLoader().getResourceAsStream("database.properties"));
             Class.forName("org.postgresql.Driver");
             conn= DriverManager.getConnection(prop.getProperty("url"), prop.getProperty("user"), prop.getProperty("password"));
-        } catch (SQLException e) {
-            System.out.println("failed to create connection");
-            e.printStackTrace();
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (SQLException | IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return conn;

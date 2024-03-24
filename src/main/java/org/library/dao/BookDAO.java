@@ -69,6 +69,12 @@ public class BookDAO extends AbstractDAO<Book> {
         return false;
     }
 
+    /**
+     * Дополнительный метод для связывания сущности BooksAuthors
+     * Связывание по существующему booKId Книги и authorId автора
+     * @param bookId Id Книги
+     * @param authorId Id автора
+     */
     public void saveBooksAuthorsTable(long bookId, long authorId){
         String query =
                 "INSERT INTO BooksAuthors " +
