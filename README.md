@@ -16,7 +16,7 @@ Base CRUD operations, with ManyToMany and OneToMany mapping.
 <b> Set-up </b>
 </h1>
 
-- All DB query commands for schemas are saved in ```postgres/ddl```
+- All DB query commands for schemas are saved in ```resources/databaseCreation.sql```
 - Configure DB in ``` src/main/resources/database.properties ```
 - Set up Tomcat server, using builded .war
 - Operate the app with Postman or other API platform.
