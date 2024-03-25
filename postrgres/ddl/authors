@@ -1,6 +1,0 @@
-CREATE TABLE IF NOT EXISTS public.authors
-(
-    authorid bigint NOT NULL,
-    authorname character varying(255) COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT authors_pkey PRIMARY KEY (authorid)
-);

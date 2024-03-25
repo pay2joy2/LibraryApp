@@ -1,8 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-S
-#src/main/java/org/library/Main.java,f\0\f0505e6834e42556a41ec6457df7c21dc4236e92
 c
 3src/main/java/org/library/db/ConnectionFactory.java,d\8\d85ddf8e1e8b545f89a9213675e9454a4416a2af
 \
@@ -50,10 +48,6 @@ b
 d
 4src/main/java/org/library/dao/ReceiveWholeQuery.java,4\5\45838c6f285b2895dc25832ef2bad3a115d4e670
 i
-9src/main/java/org/library/service/WholeQuerryService.java,0\0\00717fd0f0455a4322bb86bf5c87201c46ce0f80
-i
-9src/main/java/org/library/servlets/AllAuthorsServlet.java,b\4\b4c07baa41e1b2142ae01105c5bbaf28ea970bc8
-i
 9src/test/java/org/library/servlets/AuthorServletTest.java,e\5\e59bdbebb8d578f4cc947c89c1135a1dfe327aa7
 m
 =src/test/java/org/library/servlets/PublishersServletTest.java,6\3\639e00cbaf22c25d797d69f9f4a52ffac98bb882
@@ -73,3 +67,11 @@ H
 postrgres/ddl/publishers,b\6\b6f799df8f42c976663789afcaf41ef8c3ce6e28
 C
 postrgres/ddl/books,f\2\f27549f221f6f4d1a5da9a644768747ae7082ca8
+`
+0src/test/java/org/library/dao/AuthorDAOTest.java,a\9\a9cc90fffa96c4ca1d6a4323926c4333a58808cf
+g
+7src/main/java/org/library/db/TestConnectionFactory.java,9\a\9a5431081829aa136781f98e9866a72c94aeccd7
+^
+.src/test/java/org/library/dao/BookDAOTest.java,4\1\414e4b0e662659ffecc63396b0897d0a305b18dc
+c
+3src/test/java/org/library/dao/PublisherDAOTest.java,c\2\c2807f26c2b9cc87360263a763dca8f845372af0
