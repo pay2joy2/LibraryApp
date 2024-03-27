@@ -24,14 +24,6 @@ public abstract class AbstractService<T>{
      * @return Возвращает сущность дженерика
      * @param <T> Сущность дженерика
      */
-//    protected <T> T execute(AbstractService.DaoCommand<T> command) {
-//        try (Connection connection = connectionFactory.getConnection()) {
-//            return command.execute(connection);
-//        } catch (SQLException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
-
     protected <T> T execute(AbstractService.DaoCommand<T> command) {
         try (Connection connection = connectionFactory.getConnection()) {
             return command.execute(connection);
